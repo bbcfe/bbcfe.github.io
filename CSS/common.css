@@ -5,13 +5,18 @@
 this document holds all the css that is common among multiple .html files.
 this is where the navigation bar and footer code are. the html code is copy/paste.
 */
+body{
+	padding:0rem;
+	margin: 0rem;
+}
+
 .navbar .desktop {
 	width:100%;
 	display:flex;
 	flex-direction: row;
 	background-color: #253150;
 }
-
+/* .desktop is the subclass of navbar to differentiate between this and the mobile version */
 .desktop {
 	padding: 0;
 	margin: 0;
@@ -47,6 +52,7 @@ this is where the navigation bar and footer code are. the html code is copy/past
 	justify-content: center;
 }
 
+/* .mobile-nav-container is the wrapper for the list items for the mobile navigation bar */
 .mobile-nav-container {
 	display: flex;
 	flex-direction: column;
@@ -68,10 +74,10 @@ this is where the navigation bar and footer code are. the html code is copy/past
 	transition: all linear 0.1s;
 }
 
-
+/* below changes the toggle icon when opening the navigation bar. */
 .menu-Toggle::before{
 	font-family: fontAwesome;
-	line-height:40px;
+	line-height:2.5rem;
 	font-size: 1.5rem;
 	content: '\f0c9';
 	color: white;
@@ -91,6 +97,7 @@ this is where the navigation bar and footer code are. the html code is copy/past
 
 
 @media only screen and (max-width: 768px){
+	/* common */
 	.navbar .desktop {
 		display:none;
 	}
@@ -99,23 +106,68 @@ this is where the navigation bar and footer code are. the html code is copy/past
 		line-height:1.5rem;
 		display:flex;
 	}
+	/* home */
+	.cover {
+		height: 200px;
+	}
+	/* baiting */
+	/* ransomware */
+	/* pre-texting */
+	/* phishing */
+	/* spear-phishing */
+	/* water-holing */
+	/* vishing */
 }
+
+@media only screen and (max-width: 940px){
+	/* common */
+	.navbar .desktop a{
+		flex: 1 1 auto;
+		padding: 0;
+		margin: 0;
+		line-height: 3rem;
+		font-size: 0.9rem;
+	}
+	/* home */
+	.cover h1 {
+		font-size: 1.2rem;
+	}
+
+	/* baiting */
+	/* ransomware */
+	/* pre-texting */
+	/* phishing */
+	/* spear-phishing */
+	/* water-holing */
+	/* vishing */
+
+}
+
 @media only screen and (max-width: 1096px){
+	/* common */
 	.navbar .desktop{
 		text-align: center;
 		align-items: center;
 	}
+	/* home */
+	/* baiting */
+	/* ransomware */
+	/* pre-texting */
+	/* phishing */
+	/* spear-phishing */
+	/* water-holing */
+	/* vishing */
 	.navbar .desktop a{
+		flex:1 1 auto; 
 		line-height: 1.75;
 		font-size: 1rem;
 	}
-}
-
-@media only screen and (max-width: 920px){
-
-	.navbar .desktop a{
-		line-height: 1.5rem;
-		font-size: 0.75rem;
-	}
-
+	/* home */
+	/* baiting */
+	/* ransomware */
+	/* pre-texting */
+	/* phishing */
+	/* spear-phishing */
+	/* water-holing */
+	/* vishing */
 }

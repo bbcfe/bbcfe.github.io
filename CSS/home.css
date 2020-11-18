@@ -25,10 +25,10 @@ body {
 
 .cover h1 {
 	z-index: 1;
+	font-size: 2.2rem;
 	font-family: 'Roboto';
 	color:white;
 	text-transform: uppercase;
-	/* text-shadow: 5px 4px 4px black; */
 	letter-spacing: 0.35rem;
 }
 
