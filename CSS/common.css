@@ -5,9 +5,10 @@
 this document holds all the css that is common among multiple .html files.
 this is where the navigation bar and footer code are. the html code is copy/paste.
 */
-body{
-	padding:0rem;
-	margin: 0rem;
+
+*{
+	padding: 0;
+	margin: 0;
 }
 
 .navbar .desktop {
