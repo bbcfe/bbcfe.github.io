@@ -27,10 +27,11 @@ body {
 	z-index: 1;
 	font-size: 2.2rem;
 	text-shadow: 2px 3px 4px black;
+	letter-spacing: 0.35rem;
 	font-family: 'Roboto';
 	color:white;
 	text-transform: uppercase;
-	letter-spacing: 0.35rem;
+	
 }
 
 

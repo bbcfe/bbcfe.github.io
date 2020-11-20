@@ -64,7 +64,7 @@ this is where the navigation bar and footer code are. the html code is copy/past
 	line-height:1rem;
 }
 
-.mobile-nav-container a{
+.mobile-nav-container > a{
 	width:100%;
 	text-decoration: none;
 	color: white;
@@ -98,92 +98,149 @@ this is where the navigation bar and footer code are. the html code is copy/past
 	display:block;
 }
 
-/* Tablet media Query */
-@media only screen and (max-width: 768px){
-	/* common */
-	.navbar .desktop {
-		display:none;
-	}
-	.navbar .mobile {
-		font-size: 1.2rem;
-		line-height:1.5rem;
-		display:flex;
-	}
-
-	/* home */
-	.cover {
-		height: 200px;
-	}
-
-	.cover h1 {
-		font-size: 1rem;
-		text-align: center;
-
-	}
-
-	.breaker {
-		display: block;
-	}
-	/* baiting */
-	/* ransomware */
-	/* pre-texting */
-	/* phishing */
-	/* spear-phishing */
-	/* water-holing */
-	/* vishing */
+.coverImage{
+	color: white;
+	font-family: 'Merriweather',sans-serif;
+	text-transform: uppercase;
+	height:400px;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
 }
 
-/* Desktop Resizing formatting */
-@media only screen and (max-width: 940px){
-	/* common */
-	.navbar .desktop a{
-		flex: 1 1 auto;
-		padding: 0.35rem;
-		margin: 0;
-		line-height: 3rem;
-		font-size: 0.9rem;
-	}
-
-	/* home */
-	.cover h1 {
-		font-size: 1.75rem;
-	}
-
-	/* baiting */
-	/* ransomware */
-	/* pre-texting */
-	/* phishing */
-	/* spear-phishing */
-	/* water-holing */
-	/* vishing */
-
+.coverImage h1 {
+	font-size: 2.2rem;
+	text-shadow: 2px 3px 4px black;
+	letter-spacing: 0.35rem;
 }
-/* Desktop Resizing formatting */
-@media only screen and (max-width: 1096px){
-	/* common */
-	.navbar .desktop{
-		text-align: center;
-		align-items: center;
-	}
-	/* home */
-	/* baiting */
-	/* ransomware */
-	/* pre-texting */
-	/* phishing */
-	/* spear-phishing */
-	/* water-holing */
-	/* vishing */
-	.navbar .desktop a{
-		flex:1 1 auto; 
-		line-height: 1.75;
-		font-size: 1rem;
-	}
-	/* home */
-	/* baiting */
-	/* ransomware */
-	/* pre-texting */
-	/* phishing */
-	/* spear-phishing */
-	/* water-holing */
-	/* vishing */
+
+footer{
+	padding: 1rem;
+	font-family: 'roboto';
+	color: white;
+	background-color: #253150;
+	position: relative;
+	display:flex;
+	flex-direction: row;
 }
+
+
+
+footer div {
+	flex-direction: column;
+	align-items: center;
+	padding:0.6rem 1rem;
+	/* border: 0.5rem solid #49C155; */
+	flex: 1 1;
+}
+
+#right h3 , #left h3{
+	text-align: center;
+}
+#right p {
+	text-align: right;
+}
+
+footer div p {
+	line-height: 1.6rem;
+}
+
+footer div p a {
+	color:white;
+}
+
+
+
+		/* Tablet media Query */
+		@media only screen and (max-width: 768px){
+			/* common */
+			.navbar .desktop {
+				display:none;
+			}
+			.navbar .mobile {
+				font-size: 1.2rem;
+				line-height:1.5rem;
+				display:flex;
+			}
+
+			/* home */
+			.cover, .coverImage {
+				height: 200px;
+			}
+
+			.cover h1, .coverImage h1:not(#disableFontResize) {
+				font-size: 1rem;
+				text-align: center;
+
+			}
+
+			.breaker {
+				display: block;
+			}
+			/* baiting */
+
+			/* ransomware */
+			/* pre-texting */
+			/* phishing */
+			/* spear-phishing */
+			/* water-holing */
+			/* vishing */
+		}
+
+		/* Desktop Resizing formatting */
+		@media only screen and (max-width: 940px){
+			/* common */
+			.navbar .desktop a{
+				flex: 1 1 auto;
+				padding: 0.35rem;
+				margin: 0;
+				line-height: 3rem;
+				font-size: 0.9rem;
+			}
+
+			/* home */
+			.cover h1 {
+				font-size: 1.75rem;
+			}
+
+			/* baiting */
+			/* ransomware */
+			/* pre-texting */
+			/* phishing */
+			/* spear-phishing */
+			/* water-holing */
+			/* vishing */
+
+		}
+		/* Desktop Resizing formatting */
+		@media only screen and (max-width: 1096px){
+			/* common */
+			.navbar .desktop{
+				text-align: center;
+				align-items: center;
+			}
+			/* home */
+			/* baiting */
+			/* ransomware */
+			/* pre-texting */
+			/* phishing */
+			/* spear-phishing */
+			/* water-holing */
+			/* vishing */
+			.navbar .desktop a{
+				flex:1 1 auto; 
+				line-height: 1.75;
+				font-size: 1rem;
+			}
+			/* home */
+			/* baiting */
+			/* ransomware */
+			/* pre-texting */
+			/* phishing */
+			/* spear-phishing */
+			/* water-holing */
+			/* vishing */
+		}
