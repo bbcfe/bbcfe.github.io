@@ -26,21 +26,30 @@ body {
 .cover h1 {
 	z-index: 1;
 	font-size: 2.2rem;
+	text-shadow: 2px 3px 4px black;
 	font-family: 'Roboto';
 	color:white;
 	text-transform: uppercase;
 	letter-spacing: 0.35rem;
 }
 
-.overlay{
+
+
+
+#video {
 	z-index: 0;
 	position:absolute;
+	object-fit: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: black;
-	opacity: 0.5;
+	opacity: 1;
+}
+
+.hide {
+	display: none;
 }
 
 .textBody {

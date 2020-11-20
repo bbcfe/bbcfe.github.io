@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="../CSS/home.css">
 	<link rel="stylesheet" href="../CSS/common.css">
 	<script src="https://kit.fontawesome.com/f63f866b99.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	
+	
 	<title>TAOI | Home</title>
 </head>
 <body>
@@ -38,18 +41,18 @@
 		</div>
 	</div>
 	<div class="cover">
-		<div class="overlay"></div>
+		<video id="video" class="hide" muted loop>
+			<source type="video/mp4" src="/Blurred Video of Scripts Being Typed.mp4">
+		</video> 
 		<h1>Introduction <br class="breaker">to<br class="breaker"> Social Engineering</h1>
 	</div>
 	<div class="textBody">
 		<p>
-			Social engineering is the act of tricking someone into divulging information or taking action, usually throught technology. The purpose of social engineering is to take advantage of a potenial victim's natural tendencies and emotional reactions. <br>
-
-
-
+			Social engineering is the act of tricking someone into divulging information or taking action, usually throught technology. The purpose of social engineering is to take advantage of a potenial victim's natural tendencies and emotional reactions.
 		</p>
 	</div>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><script rel="javascript" type="text/javascript">
+	<script src="../JS.js" crossorigin="anonymous"></script>
+<script rel="javascript" type="text/javascript">
 	$(document).ready(function() {$('.menu-Toggle').click(function() {$('.menu-Toggle').toggleClass('active')
 			$('.menu').toggleClass('active')})})</script>
 </body>

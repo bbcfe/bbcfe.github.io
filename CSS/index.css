@@ -37,9 +37,10 @@ body{
 	margin-bottom: -1rem;
 }
 
-div.link {
+.link {
 	padding-top: 2rem;
 }
+
 
 .link a{
 	color: #49C155;
