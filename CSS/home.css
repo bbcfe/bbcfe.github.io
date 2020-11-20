@@ -50,6 +50,10 @@ body {
 
 }
 
+.breaker {
+	display:none;
+}
+
 .textBody p {
 	font-family: 'Merriweather Sans', sans-serif;
 }
