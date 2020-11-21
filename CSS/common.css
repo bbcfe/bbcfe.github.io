@@ -133,11 +133,13 @@ footer div {
 	flex-direction: column;
 	align-items: center;
 	padding:0.6rem 1rem;
-	/* border: 0.5rem solid #49C155; */
+	border: 0.2rem solid #49c155;
+	border-radius: 1rem;
+	margin: 0.5rem;
 	flex: 1 1;
 }
 
-#right h3 , #left h3{
+#right h3 , #left h3,#center h3{
 	text-align: center;
 }
 #right p {
@@ -165,13 +167,19 @@ footer div p a {
 				line-height:1.5rem;
 				display:flex;
 			}
-
+			/* index */
+			.landingPage-desktop {
+				display:none;
+			}
+			.landingPage-mobile {
+				display: block;
+			}
 			/* home */
 			.cover, .coverImage {
 				height: 200px;
 			}
 
-			.cover h1, .coverImage h1:not(#disableFontResize) {
+			.cover h1, .coverImage:not(#disableFontResize) h1 {
 				font-size: 1rem;
 				text-align: center;
 
@@ -201,6 +209,10 @@ footer div p a {
 				font-size: 0.9rem;
 			}
 
+			footer{
+				flex-direction: column;
+			}
+			/* index */
 			/* home */
 			.cover h1 {
 				font-size: 1.75rem;
@@ -222,6 +234,7 @@ footer div p a {
 				text-align: center;
 				align-items: center;
 			}
+			/* index */
 			/* home */
 			/* baiting */
 			/* ransomware */
@@ -235,6 +248,7 @@ footer div p a {
 				line-height: 1.75;
 				font-size: 1rem;
 			}
+			/* index */
 			/* home */
 			/* baiting */
 			/* ransomware */
