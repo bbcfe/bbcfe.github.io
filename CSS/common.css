@@ -6,6 +6,10 @@ this document holds all the css that is common among multiple .html files.
 this is where the navigation bar and footer code are. the html code is copy/paste.
 */
 
+html {
+	scroll-behavior: smooth;
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -88,6 +92,7 @@ this is where the navigation bar and footer code are. the html code is copy/past
 }
 
 .menu-Toggle.active::before{
+	font-size: 1.5rem;
 	content: '\f00d';
 }
 .menu{
@@ -97,6 +102,8 @@ this is where the navigation bar and footer code are. the html code is copy/past
 .active {
 	display:block;
 }
+
+/* below is all content formatting cover image */
 
 .coverImage{
 	color: white;
@@ -117,6 +124,19 @@ this is where the navigation bar and footer code are. the html code is copy/past
 	letter-spacing: 0.35rem;
 }
 
+/* below is the formatting for the textBody of each page */
+div.textBody {
+	text-align: justify;
+	margin-top: 1rem;
+	margin: 0rem 2rem;
+
+}
+
+div.textBody p {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+
 footer{
 	padding: 1rem;
 	font-family: 'roboto';
@@ -133,7 +153,7 @@ footer div {
 	flex-direction: column;
 	align-items: center;
 	padding:0.6rem 1rem;
-	border: 0.2rem solid #49c155;
+	/* border: 0.2rem solid #49c155; */
 	border-radius: 1rem;
 	margin: 0.5rem;
 	flex: 1 1;
@@ -144,6 +164,31 @@ footer div {
 }
 #right p {
 	text-align: right;
+}
+#center {
+	text-align: center;
+}
+
+.socialMediaLinks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	flex-direction: row;
+}
+.socialMediaLinks div{
+	flex:1 1 auto;
+	flex-direction: row;
+}
+.socialMediaLinks div a{
+	color: white;
+	font-size: 1.5rem;
+}
+
+
+.socialMediaLinks a i:hover{
+	color: #49C155;
 }
 
 footer div p {
@@ -157,7 +202,7 @@ footer div p a {
 
 
 		/* Tablet media Query */
-		@media only screen and (max-width: 768px){
+		@media only screen and (max-width: 820px){
 			/* common */
 			.navbar .desktop {
 				display:none;
@@ -167,6 +212,12 @@ footer div p a {
 				line-height:1.5rem;
 				display:flex;
 			}
+
+			.coverImage {
+				height: 300px;
+			}
+			
+
 			/* index */
 			.landingPage-desktop {
 				display:none;
@@ -175,8 +226,8 @@ footer div p a {
 				display: block;
 			}
 			/* home */
-			.cover, .coverImage {
-				height: 200px;
+			.cover {
+				height: 300px;
 			}
 
 			.cover h1, .coverImage:not(#disableFontResize) h1 {
@@ -211,6 +262,34 @@ footer div p a {
 
 			footer{
 				flex-direction: column;
+				padding:0;
+			}
+
+			footer div {
+				padding: 0;
+				border: 0.25rem solid white;
+				border-top: none;
+				margin: 0.5rem 1.5rem;
+				border-radius: 0rem;
+			}
+
+			.socialMediaLinks, .socialMediaLinks div {
+				border: none;
+			}
+
+			footer div h3 {
+				/* text-transform: uppercase; */
+				letter-spacing: 0.2rem;
+				border: 0.25rem solid white;
+				border-left: none;
+				border-right: none;
+				padding: 0.5rem;
+			}
+
+
+			#left p, #center p, #right p{
+				padding-bottom: 0.5rem;
+				text-align: center;
 			}
 			/* index */
 			/* home */
