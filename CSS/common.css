@@ -6,17 +6,25 @@ this document holds all the css that is common among multiple .html files.
 this is where the navigation bar and footer code are. the html code is copy/paste.
 */
 
-html {
-	scroll-behavior: smooth;
-}
-
 *{
 	padding: 0;
 	margin: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 
+body {
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 
+.main-content {
+	flex:1;
+}
 .navbar .desktop {
 	width:100%;
 	display:flex;
@@ -136,67 +144,64 @@ div.textBody p {
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
-
+/* below is the code for the footer that is common */
 footer{
-	padding: 1rem;
-	font-family: 'roboto';
+	display: flex;
+	font-family: 'Merriweather',sans-serif;
+	align-content: center;
+	justify-content: center;
 	color: white;
 	background-color: #253150;
-	position: relative;
-	display:flex;
 	flex-direction: row;
+	padding:0.5rem 0.2rem 1rem 0.2rem;
 }
 
-
+footer a{
+	color: white;
+}
 
 footer div {
-	flex-direction: column;
-	align-items: center;
-	padding:0.6rem 1rem;
-	/* border: 0.2rem solid #49c155; */
-	border-radius: 1rem;
-	margin: 0.5rem;
-	flex: 1 1;
-}
-
-#right h3 , #left h3,#center h3{
-	text-align: center;
-}
-#right p {
-	text-align: right;
-}
-#center {
-	text-align: center;
-}
-
-.socialMediaLinks {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+	flex:1;
 	padding: 0;
-	flex-direction: row;
+	border: 0.25rem solid white;
+	border-top: none;
+	line-height: 1.4rem;
+	margin: 0.5rem 1.5rem;
+	border-radius: 0rem;
 }
-.socialMediaLinks div{
-	flex:1 1 auto;
-	flex-direction: row;
+
+footer div h3 {
+	text-align: center;
+	/* text-transform: uppercase; */
+	letter-spacing: 0.2rem;
+	border: 0.25rem solid white;
+	border-left: none;
+	border-right: none;
+	padding: 0.5rem;
 }
-.socialMediaLinks div a{
-	color: white;
+#center div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.socialMediaLinks {
 	font-size: 1.5rem;
+	flex-direction: row;
 }
 
-
-.socialMediaLinks a i:hover{
+.socialMediaLinks a:hover {
 	color: #49C155;
 }
 
-footer div p {
-	line-height: 1.6rem;
+.socialMediaLinks,
+.socialMediaLinks div {
+	border: none;
 }
 
-footer div p a {
-	color:white;
+
+#left p, #center p, #right p{
+	padding-bottom: 0.5rem;
+	text-align: center;
 }
 
 
@@ -260,37 +265,11 @@ footer div p a {
 				font-size: 0.9rem;
 			}
 
-			footer{
+			footer {
 				flex-direction: column;
-				padding:0;
-			}
-
-			footer div {
-				padding: 0;
-				border: 0.25rem solid white;
-				border-top: none;
-				margin: 0.5rem 1.5rem;
-				border-radius: 0rem;
-			}
-
-			.socialMediaLinks, .socialMediaLinks div {
-				border: none;
-			}
-
-			footer div h3 {
-				/* text-transform: uppercase; */
-				letter-spacing: 0.2rem;
-				border: 0.25rem solid white;
-				border-left: none;
-				border-right: none;
-				padding: 0.5rem;
 			}
 
 
-			#left p, #center p, #right p{
-				padding-bottom: 0.5rem;
-				text-align: center;
-			}
 			/* index */
 			/* home */
 			.cover h1 {
@@ -313,6 +292,12 @@ footer div p a {
 				text-align: center;
 				align-items: center;
 			}
+
+			.navbar .desktop a{
+				flex:1 1 auto; 
+				line-height: 1.75;
+				font-size: 1rem;
+			}
 			/* index */
 			/* home */
 			/* baiting */
@@ -322,11 +307,6 @@ footer div p a {
 			/* spear-phishing */
 			/* water-holing */
 			/* vishing */
-			.navbar .desktop a{
-				flex:1 1 auto; 
-				line-height: 1.75;
-				font-size: 1rem;
-			}
 			/* index */
 			/* home */
 			/* baiting */

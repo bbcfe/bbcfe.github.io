@@ -8,38 +8,20 @@
 	<script src="https://kit.fontawesome.com/f63f866b99.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<title>Document</title>
-	<link rel="icon" href="">
 </head>
 <body>
-	<div class="navbar">
-		<div class="desktop">
-			<a id="homeButton" href="home.html"><i class="fas fa-arrow-left"></i></a>
-			<a href="baiting.html">Baiting</a>
-			<a href="ransomware.html">Ransomware</a>
-			<a href="pre-texting.html">Pre-texting</a>
-			<a href="phishing.html">Phishing</a>
-			<a href="spear-phishing.html">Spear-phishing</a>
-			<a href="water-holing.html">Water-holing</a>
-			<a href="vishing.html">Vishing</a>
+	<div class="main-content">
+		<div id="navbar"></div>
+		<script>$('#navbar').load('common/navbar.html');</script>
+		<div id="disableFontResize" class="coverImage">
+			<h1>Baiting</h1>
 		</div>
-		<div class="mobile">
-			<div class="menu-Toggle"></div> <!--This is the icon shown for the toggle action of the navigation bar-->
-			<div class="menu"> <!-- the total container-->
-				<div class="mobile-nav-container">
-					<a id="homeButton" href="home.html"><i class="fas fa-arrow-left"></i></a>
-					<a href="baiting.html">Baiting</a>
-					<a href="ransomware.html">Ransomware</a>
-					<a href="pre-texting.html">Pre-texting</a>
-					<a href="phishing.html">Phishing</a>
-					<a href="spear-phishing.html">Spear-phishing</a>
-					<a href="water-holing.html">Water-holing</a>
-					<a href="vishing.html">Vishing</a>
-				</div>
-				
-			</div>
+		<div class="textBody">
+			<!-- insert code below -->
 		</div>
 	</div>
-	<!-- Code Here -->
-<script src="/JavaScript/navbar.js" crossorigin="anonymous"></script> <!--thi-->
+	<div id="footer"></div>
+	<script>$("#footer").load("common/footer.html");</script>
+<script src="/JavaScript/navbar.js" crossorigin="anonymous"></script>
 </body>
 </html>
