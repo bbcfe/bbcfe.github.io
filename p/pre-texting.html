@@ -4,24 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../CSS/common.css">
-	<link rel="icon" href="/frame-3.ico">
-	<script src="https://kit.fontawesome.com/f63f866b99.js" crossorigin="anonymous"></script>
+	<!-- Add stylesheet for specific page below -->
+
+	<link rel="icon" href="/frame-3.ico"> <!-- this is the favicon for the website -->
+	<script src="https://kit.fontawesome.com/f63f866b99.js" crossorigin="anonymous"></script> <!-- fontawesome provides all the icons throughout the website ie. the social media icons in the footer or the navigation bar -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<title>Document</title>
 </head>
 <body>
 	<div class="main-content">
-		<div id="navbar"></div>
-		<script>$('#navbar').load('common/navbar.html');</script>
-		<div id="disableFontResize" class="coverImage">
-			<h1>Baiting</h1>
+		<div id="navbar"></div><!-- the code for the footer is held on a separate .html file in the 'common' folder -->
+		<div id="disableFontResize" class="coverImage"><!-- the id disables the resizing of text in the media queries -->
+			<h1>pre-texting</h1>
 		</div>
 		<div class="textBody">
-			<!-- insert code below -->
+			<!-- insert content for the page topic below in a 'p' element -->
 		</div>
 	</div>
-	<div id="footer"></div>
-	<script>$("#footer").load("common/footer.html");</script>
-<script src="/JavaScript/navbar.js" crossorigin="anonymous"></script>
+	<div id="footer"></div> <!-- the code for the footer is held on a separate .html file in the 'common' folder -->
+	<script src="/JavaScript/navbar.js" crossorigin="anonymous"></script>
+<script>$("#footer").load("common/footer.html");</script>
+<script>$('#navbar').load('common/navbar.html');</script>
 </body>
 </html>

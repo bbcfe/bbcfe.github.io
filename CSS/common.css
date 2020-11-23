@@ -22,6 +22,10 @@ body {
 	min-height: 100vh;
 }
 
+.coverImage {
+	background-image: url(/images/stock.jpg);
+}
+
 .main-content {
 	flex:1;
 }
