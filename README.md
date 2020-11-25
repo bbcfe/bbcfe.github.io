@@ -16,6 +16,9 @@ Website Project for NETSEC in COMPSCI level 6.
 :Benjamin Bruce
 :Andrew Rafter
 
+<!-- Hosting -->
+:Giorgi Japaridze
+
 <!-- Content Team -->
 :Fiachra Curran
 :Dexter John
