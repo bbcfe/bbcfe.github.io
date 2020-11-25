@@ -137,15 +137,26 @@ body {
 }
 
 /* below is the formatting for the textBody of each page */
-div.textBody {
-	text-align: justify;
-	margin-top: 1rem;
-	margin: 0rem 2rem;
+.textBody {
+	text-align: left;
+	padding: 0rem 16rem;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
 
 }
 
-div.textBody p {
+.textBody h3 {
+	margin-top: 0.5rem;
+	text-align: center;
+	font-family: 'Merriweather',sans-serif;
+}
+
+.textBody p {
 	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.textBody iframe{
+	width: 100%;
 }
 
 /* below is the code for the footer that is common */
@@ -208,11 +219,46 @@ footer div h3 {
 	text-align: center;
 }
 
+		@media only screen and (max-width: 1096px){
+			/* common */
+			.textBody{
+				padding: 0rem 7rem;
+				padding-top: 1rem;
+				padding-bottom: 3rem;
+			}
+			.navbar .desktop{
+				text-align: center;
+				align-items: center;
+			}
 
-
+			.navbar .desktop a{
+				flex:1 1 auto; 
+				line-height: 1.75;
+				font-size: 1rem;
+			}
+			/* index */
+			/* home */
+			/* baiting */
+			/* ransomware */
+			/* pre-texting */
+			/* phishing */
+			/* spear-phishing */
+			/* water-holing */
+			/* vishing */
+		}
+		@media only screen and (max-width:600px){
+			.textBody {
+				margin: 0;
+				padding: 0rem 0rem;
+			}
+		}
 		/* Tablet media Query */
 		@media only screen and (max-width: 820px){
 			/* common */
+			.textBody {
+				padding: 0rem 2rem;
+				padding-bottom: 3rem;
+			}
 			.navbar .desktop {
 				display:none;
 			}
@@ -242,7 +288,6 @@ footer div h3 {
 			.cover h1, .coverImage:not(#disableFontResize) h1 {
 				font-size: 1rem;
 				text-align: center;
-
 			}
 
 			.breaker {
@@ -261,6 +306,10 @@ footer div h3 {
 		/* Desktop Resizing formatting */
 		@media only screen and (max-width: 940px){
 			/* common */
+			.textBody{
+				padding: 0rem 2rem;
+				padding-bottom: 3rem;
+			}
 			.navbar .desktop a{
 				flex: 1 1 auto;
 				padding: 0.35rem;
@@ -288,25 +337,3 @@ footer div h3 {
 
 		}
 		/* Desktop Resizing formatting */
-		@media only screen and (max-width: 1096px){
-			/* common */
-			.navbar .desktop{
-				text-align: center;
-				align-items: center;
-			}
-
-			.navbar .desktop a{
-				flex:1 1 auto; 
-				line-height: 1.75;
-				font-size: 1rem;
-			}
-			/* index */
-			/* home */
-			/* baiting */
-			/* ransomware */
-			/* pre-texting */
-			/* phishing */
-			/* spear-phishing */
-			/* water-holing */
-			/* vishing */
-		}
