@@ -1,0 +1,9 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 404 /404/404.html
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(socialengineeringhelp\.com)(:80)? [NC]
+RewriteRule ^(.*) http://www.socialengineeringhelp.com/$1 [R=301,L]
+order deny,allow
