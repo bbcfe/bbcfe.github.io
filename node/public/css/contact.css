@@ -6,6 +6,10 @@ html {
 	font-size: 16px;
 }
 
+*{
+	font-family: "Roboto";
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -27,9 +31,7 @@ h1 {
 	letter-spacing: 0.5rem;
 }
 
-p{
-	font-family: "Roboto";
-}
+
 
 form {
 	padding: 0;
@@ -50,7 +52,6 @@ form {
 	border:0.3rem solid white;
 }
 
-
 .name {
 	display: flex;
 	flex-direction: row;
@@ -62,6 +63,18 @@ form {
 
 .name .input {
 	flex:1 1;
+}
+
+#message {
+	color: white;
+	background-color: #253150;
+	border:0.3rem solid white;
+	margin:1rem 0;
+	resize: vertical;
+}
+
+button {
+	color: #253150;
 }
 
 
