@@ -5,7 +5,12 @@
 this document holds all the css that is common among multiple .html files.
 this is where the navigation bar and footer code are. the html code is copy/paste.
 */
-
+:root {
+	--navy-theme: #253150;
+	--green-theme:#49C155;
+	--text-color-override: white;
+	--override-white: white;
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -33,7 +38,7 @@ body {
 	width:100%;
 	display:flex;
 	flex-direction: row;
-	background-color: #253150;
+	background-color: var(--navy-theme);
 }
 /* .desktop is the subclass of navbar to differentiate between this and the mobile version */
 .desktop {
@@ -53,17 +58,17 @@ body {
 	text-align: center;
 	line-height: 2rem;
 	text-decoration: none;
-	color: white;
+	color: var(--override-white);
 	padding: 0.5rem 1rem;
 	transition: background-color linear 0.1s;
 }
 
 .navbar .desktop a:hover{
-	background-color: #49C155;
+	background-color: var(--green-theme);
 }
 
 .navbar .mobile {
-	background-color: #253150;
+	background-color: var(--navy-theme);
 	width:100%;
 	display:none;
 	flex-direction: column;
@@ -83,13 +88,13 @@ body {
 .mobile-nav-container > a{
 	width:100%;
 	text-decoration: none;
-	color: white;
+	color: var(--override-white);
 	line-height: 2rem;
 	font-family: 'merriweather Sans';
 }
 
 .mobile-nav-container a:hover {
-	background-color: #49C155;
+	background-color: var(--green-theme);
 	transition: all linear 0.1s;
 }
 
@@ -99,7 +104,7 @@ body {
 	line-height:2.5rem;
 	font-size: 1.5rem;
 	content: '\f0c9';
-	color: white;
+	color: var(--override-white);
 	cursor: pointer;
 }
 
@@ -118,7 +123,7 @@ body {
 /* below is all content formatting cover image */
 
 .coverImage{
-	color: white;
+	color: var(--override-white);
 	font-family: 'Merriweather',sans-serif;
 	text-transform: uppercase;
 	height:400px;
@@ -183,6 +188,7 @@ ol li {
 }
 .youtubeLink {
 	position: relative;
+	margin: 1rem;
 	padding-bottom:56.25% ;
 }
 
@@ -217,20 +223,20 @@ footer{
 	font-family: 'Merriweather',sans-serif;
 	align-content: center;
 	justify-content: center;
-	color: white;
-	background-color: #253150;
+	color: var(--override-white);
+	background-color: var(--navy-theme);
 	flex-direction: row;
 	padding:0.5rem 0.2rem 1rem 0.2rem;
 }
 
 footer a{
-	color: white;
+	color: var(--override-white);
 }
 
 footer div {
 	flex:1;
 	padding: 0;
-	border: 0.25rem solid white;
+	border: 0.25rem solid var(--override-white);
 	border-top: none;
 	line-height: 1.5rem;
 	margin: 0.5rem 1.5rem;
@@ -241,7 +247,7 @@ footer div h3 {
 	text-align: center;
 	/* text-transform: uppercase; */
 	letter-spacing: 0.2rem;
-	border: 0.25rem solid white;
+	border: 0.25rem solid var(--override-white);
 	border-left: none;
 	border-right: none;
 	padding: 0.5rem;
@@ -287,9 +293,40 @@ footer div h3 {
 	padding: 0rem 0.5rem;
 	text-align: center;
 }
-#right{
+
+#left {
+	display:flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+#left h3 {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+#center {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#center h3 {
+	box-sizing: border-box;
+	width: 100%;
+}
+#right{
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	justify-content: space-between;
+	align-items: center;
+}
+#right h3 {
+	box-sizing: border-box;
+	width: 100%;
 }
 
 		@media only screen and (max-width: 1110px){
@@ -363,6 +400,9 @@ footer div h3 {
 			/* spear-phishing */
 			.video-wrapper {
 				max-width: 80%;
+			}
+			.youtubeLink {
+				margin:1rem 0;
 			}
 			/* water-holing */
 			/* vishing */
@@ -459,6 +499,49 @@ footer div h3 {
 			/* ransomware */
 			img.flexImg {
 				max-width: 100%;
+			}
+		}
+
+		@media(prefers-color-scheme: dark){
+			body{
+				background-color: rgb(27, 27, 27);
+				color:var(--override-white);
+			}
+
+			.coverImage{
+				position: relative;
+			}
+			.coverImage::before{
+				content: '';
+				position: absolute;
+				top:0;
+				right:0;
+				left: 0;
+				bottom: 0;
+				background-color:rgba(30, 30, 30, .5) ;
+			}
+
+			.coverImage h1{
+				position: relative;
+				color: white;
+			}
+			
+			:root{
+				--green-theme: #308a3b;
+				--navy-theme: rgb(44, 44, 44);
+				--text-color-override: #49C155;
+				--override-white: rgb(212, 212, 212);
+			}
+			h3{
+				border:2px solid var(--override-white);
+				width: auto;
+				margin: auto 7rem;
+				padding:0.5rem 0;
+				color:var(--text-color-override);
+			}
+			footer div h3{
+				color:var(--override-white);
+				text-decoration: none;
 			}
 		}
 
