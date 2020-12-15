@@ -6,12 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="CSS/index.css">
 	<link rel="stylesheet" href="CSS/common.css">
+	<link rel="stylesheet" href="/CSS/modal.css">
 	<link rel="icon" href="/frame-3.ico">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
 	<title>SEH</title>
 </head>
 <body>
+	<div class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="modal-header">
+				<h1>This is for Quality Assurance Only</h1>
+			</div>
+			<div class="modal-body">
+				<p>Thank you for participating in the testing of our website. We ask that if you come into any errors on the site that you contact <a target="_blank" href="mailto:contact@socialengineeringhelp.com">contact@socialengineeringhelp.com</a> using the following format:</p>
+				<p style="padding-left: 20px;">
+					Subject Header: QA <br>
+					Description of Error<br>
+					What device was used	
+				</p>
+			</div>
+			
+		</div>
+	</div>
 	<div class="landingPage-desktop">	
 		<p data-aos="fade-down" data-aos-duration="1000" id="landingPage_Welcome">WELCOME TO</p>
 		<h1 data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" id="landingPage_Header">Social Engineering Help</h1>
@@ -26,6 +44,7 @@
 			<a href="/p/home/">JUMP IN</a>
 		</div>
 	</div>
+	<script src="/JavaScript/modal.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
 </body>

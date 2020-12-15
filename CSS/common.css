@@ -503,6 +503,9 @@ footer div h3 {
 		}
 
 		@media(prefers-color-scheme: dark){
+			.textBody a{
+				color: var(--green-theme);
+			}
 			body{
 				background-color: rgb(27, 27, 27);
 				color:var(--override-white);
@@ -521,6 +524,19 @@ footer div h3 {
 				background-color:rgba(30, 30, 30, .5) ;
 			}
 
+			div.flexImg{
+				position: relative;
+			}
+			div.flexImg::before{
+				content:'';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(30, 30, 30, .2);
+			}
+			
 			.coverImage h1{
 				position: relative;
 				color: white;
@@ -532,6 +548,10 @@ footer div h3 {
 				--text-color-override: #49C155;
 				--override-white: rgb(212, 212, 212);
 			}
+
+			footer div {
+				box-sizing: border-box;
+			}
 			h3{
 				border:2px solid var(--override-white);
 				width: auto;
@@ -540,6 +560,7 @@ footer div h3 {
 				color:var(--text-color-override);
 			}
 			footer div h3{
+				margin:unset;
 				color:var(--override-white);
 				text-decoration: none;
 			}
