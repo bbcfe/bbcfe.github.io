@@ -15,6 +15,8 @@
 </head>
 <body>
 	<div class="main-content">
+		<div id="myModal"></div>
+		<button id="modalBtn">Click this to see the email format</button>
 		<div class="navbar">
 			<div class="desktop">
 				<a id="homeButton" href="/"><i class="fas fa-home"></i></a>
@@ -59,7 +61,7 @@
 					<iframe width="945" height="532" src="https://www.youtube.com/embed/Vo1urF6S4u0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
-			<h3>What is the aim of this site</h3>
+			<h3>What is the aim of this site?</h3>
 			<p>
 				The aim of this site is to help people protect themselves from attacks that require little (if any) code used. We will identify the different ways that someone can gain information about you. <br>
 				Resources will be provided to help inform you about the constantly changing landscape.
@@ -67,7 +69,9 @@
 		</div>
 	</div>
 	<div id="footer"></div>
+	<script src="/JavaScript/modal.js"></script>
 	<script>$("#footer").load("../common/footer.html");</script>
+	<script>$("#myModal").load('/p/common/modal.html');</script>
 	<script src="/JavaScript/navbar.js" crossorigin="anonymous"></script>
 	<script src="/JavaScript/resize.js"></script>
 </body>

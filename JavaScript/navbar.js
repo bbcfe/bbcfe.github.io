@@ -1,4 +1,3 @@
-
 setTimeout(function(){
 	$(document).ready(function() {
 	console.log('Function loaded');

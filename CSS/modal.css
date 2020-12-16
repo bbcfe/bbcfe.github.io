@@ -1,6 +1,6 @@
 .modal {
 	/* color:var(--text-color-override); */
-	display: block;
+	display: none;
 	position: fixed;
 	top: 0;
 	left:0;
@@ -28,6 +28,10 @@ a {
 }
 
 .modal-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	border-radius:8px 8px 0 0 ;
 	text-align: center;
 	font-family: "Merriweather",sans-serif;
@@ -37,19 +41,25 @@ a {
 	background-color: var(--green-theme);
 }
 
+.modal-header .close{
+	padding-right: 10px;
+}
+
 .modal-body {
 	padding: 8px 8px;
 }
 
 .close {
+	color: rgba(0, 0, 0, 0.6);
 	font-weight: bold;
 	float:right;
-	font-size: 28px;
+	font-size: 36px;
+	transition: color ease-in 0.2s;
 }
 
 .close:hover,
 .close:focus {
-	color: red;
+	color: rgba(0, 0, 0, 1);
 	text-decoration: none;
 	cursor: pointer;
 }
