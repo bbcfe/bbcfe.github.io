@@ -1,7 +1,12 @@
 .coverImage {
-	height: 100px;
+	background-image: url(/images/https___blogs-images.forbes.com_laurencebradford_files_2016_12_laptop-code-1200x800.jpeg);
+	height: 200px;
 }
 .websiteBio a:hover img{
-	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	    -ms-transform: scale(0.9);
+	        transform: scale(0.9);
+	-webkit-transition: all ease-in 0.1s;
+	-o-transition: all ease-in 0.1s;
 	transition: all ease-in 0.1s;
 }

@@ -67,6 +67,8 @@ body{
 	border: 0.25rem solid var(--green-theme);
 	letter-spacing: 0.25rem;
 	border-radius: 1rem;
+	-webkit-transition: all linear .1s;
+	-o-transition: all linear .1s;
 	transition: all linear .1s;
 }
 

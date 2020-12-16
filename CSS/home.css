@@ -14,10 +14,19 @@ body {
 	position: relative;
 	padding:0;
 	margin: unset;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_660582997_412145.jpg);
 	background-image: url(/images/https___blogs-images.forbes.com_laurencebradford_files_2016_12_laptop-code-1200x800.jpeg);
 	background-size: cover;
@@ -41,7 +50,8 @@ body {
 #video {
 	z-index: 0;
 	position:absolute;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
