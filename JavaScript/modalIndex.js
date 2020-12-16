@@ -1,4 +1,3 @@
-$('head').append('<link rel="stylesheet" href="/CSS/modal.css">');
 var modal = document.getElementsByClassName("modal")[0];
 
 modal.style.display = "block";
