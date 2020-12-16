@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/CSS/common.css">
+	<!-- Add stylesheet for specific page below -->
+
+	<link rel="icon" href="/frame-3.ico"> <!-- this is the favicon for the website -->
+	<script src="https://kit.fontawesome.com/f63f866b99.js" crossorigin="anonymous"></script> <!-- fontawesome provides all the icons throughout the website ie. the social media icons in the footer or the navigation bar -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<title>Resources</title>
+</head>
+<body>
+	<div class="main-content">
+		<div id="navbar"></div><!-- the code for the footer is held on a separate .html file in the 'common' folder -->
+		<div id="disableFontResize" class="coverImage"><!-- the id disables the resizing of text in the media queries -->
+			<h1>Resources</h1>
+		</div>
+		<div class="textBody">
+			<div class="websiteBio">
+				<h3>HaveIBeenPwned</h3>
+				<a href="https://haveibeenpwned.com/"><div class="flexImg"><img src="/images/resources/haveIbeenpwned.png" alt="https://haveibeenpwned.com/" class="flexImg"></div></a>
+				<p class="description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vel. Mollitia saepe perspiciatis et vitae quaerat quas pariatur ipsum, est nulla corporis explicabo exercitationem maiores at quia veniam error iste asperiores atque quam expedita totam. Reprehenderit modi perspiciatis molestias possimus neque dicta ad corporis magni, sint, eaque nisi at consequuntur.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div> <!-- the code for the footer is held on a separate .html file in the 'common' folder -->
+<script>$("#footer").load("../common/footer.html");</script>
+<script>$('#navbar').load('../common/navbar.html');</script>
+<script src="/JavaScript/navbar.js" crossorigin="anonymous"></script>
+</body>
+</html>
