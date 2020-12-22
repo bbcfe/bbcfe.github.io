@@ -6,7 +6,7 @@ this document holds all the css that is common among multiple .html files.
 this is where the navigation bar and footer code are. the html code is copy/paste.
 */
 :root {
-	--navy-theme: #253150;
+	--navy-theme:37, 49, 80;
 	--green-theme:#49C155;
 	--text-color-override: white;
 	--override-white: white;
@@ -51,6 +51,10 @@ body {
 	transition: opacity ease-in 0.1s;
 }
 
+#modalBtn a{
+	color: var(--override-white);
+	text-decoration: none;
+}
 #modalBtn:hover,
 #modalmodalBtn:focus{
 	opacity: 0.8;
@@ -70,7 +74,7 @@ body {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	background-color: var(--navy-theme);
+	background-color: rgba(var(--navy-theme),1);
 }
 /* .desktop is the subclass of navbar to differentiate between this and the mobile version */
 .desktop {
@@ -103,7 +107,7 @@ body {
 }
 
 .navbar .mobile {
-	background-color: var(--navy-theme);
+	background-color: rgba(var(--navy-theme),1);
 	width:100%;
 	display:none;
 	-webkit-box-orient: vertical;
@@ -296,7 +300,7 @@ footer{
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	color: var(--override-white);
-	background-color: var(--navy-theme);
+	background-color: rgba(var(--navy-theme),1);
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
@@ -700,7 +704,7 @@ footer div h3 {
 			
 			:root{
 				--green-theme: #308a3b;
-				--navy-theme: rgb(44, 44, 44);
+				--navy-theme: 44, 44, 44;
 				--text-color-override: #49C155;
 				--override-white: rgb(212, 212, 212);
 			}

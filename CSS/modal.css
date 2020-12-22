@@ -20,7 +20,7 @@ a {
 .modal-content {
 	font-family: "Roboto",sans-serif;
 	border-radius: 8px;
-	background-color: var(--navy-theme);
+	background-color: rgba(var(--navy-theme),1);
 	position: relative;
 	-webkit-animation: animateModal;
 	        animation: animateModal;

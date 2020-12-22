@@ -6,7 +6,7 @@ html {
 }
 
 body{
-	background-color: var(--navy-theme);
+	background-color: rgba(var(--navy-theme),1);
 	margin: 0px;
 	padding: 0px;
 }
@@ -74,5 +74,5 @@ body{
 
 .link a:hover {
 	background-color: var(--green-theme);
-	color: var(--navy-theme);
+	color: rgba(var(--navy-theme),1);
 }
