@@ -2,7 +2,6 @@
 
 .main-content {
 	display:flex;
-	
 	flex-direction: column;
 	align-items: center;
 	background-color: rgba(var(--navy-theme),1);
@@ -23,6 +22,7 @@ form {
 .form-row{
 	margin:0.5rem;
 	display:flex;
+	flex-direction: row;
 	width:100%;
 }
 
@@ -40,9 +40,23 @@ form {
 	flex: 1;
 }
 
+#modalBtn {
+	display:none;
+}
+
 .form-row *:focus {
 	outline: white;
 }
+
+#message {
+	overflow: auto;
+	display: block;
+	resize: none;
+	min-height: 200px;
+}
+
+/* #message[contenteditable]:empty::before {
+} */
 
 #submit {
 	background-color: rgba(var(--navy-theme),1);
@@ -55,4 +69,14 @@ form {
 #submit:hover{
 	cursor: pointer;
 	background-color: var(--green-theme);
+}
+
+
+@media only screen and (max-width: 800px){
+	form {
+		width: 80vw;
+	}
+	.form-row{	
+		flex-direction: column;
+	}
 }

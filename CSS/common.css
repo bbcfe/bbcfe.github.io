@@ -11,6 +11,10 @@ this is where the navigation bar and footer code are. the html code is copy/past
 	--text-color-override: white;
 	--override-white: white;
 }
+
+body::before {
+	background-color: rebeccapurple;
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -36,24 +40,23 @@ body {
 	background-image: url(/images/stock.jpg);
 }
 
-#modalBtn {
-	margin: 0;
-	border: 0px;
-	cursor: pointer;
-	width:100%;
-	background-color: var(--green-theme);
-	color: var(--text-color-override);
-	font-weight: bold;
-	padding: 0.3rem;
-	font-size:0.7rem;
-	-webkit-transition: opacity ease-in 0.1s;
-	-o-transition: opacity ease-in 0.1s;
-	transition: opacity ease-in 0.1s;
+*:focus{
+	outline: var(--override-white);
 }
 
-#modalBtn a{
+
+#modalBtn{
+	box-sizing: border-box;
+	font: 0.9rem "Roboto",sans-serif;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
 	color: var(--override-white);
 	text-decoration: none;
+	background-color: var(--green-theme);
+	padding: 0.2rem;
+	margin: 0;
+	transition: all 0.2s ease-in-out;
 }
 #modalBtn:hover,
 #modalmodalBtn:focus{
