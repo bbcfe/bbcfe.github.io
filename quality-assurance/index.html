@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/CSS/common.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- Add stylesheet for specific page below -->
+
+	<link rel="icon" href="/frame-3.ico"> <!-- this is the favicon for the website -->
+	<script src="https://kit.fontawesome.com/f63f866b99.js" crossorigin="anonymous"></script> <!-- fontawesome provides all the icons throughout the website ie. the social media icons in the footer or the navigation bar -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<title>Quality Assurance</title>
+</head>
+<body>
+	<div id="navbar"></div><!-- the code for the footer is held on a separate .html file in the 'common' folder -->
+	<div class="main-content">
+		<h1>Quality Assurance</h1>
+		<p>Use this form to report any errors or suggestions</p>
+		<form action="https://formspree.io/f/xjvppwjp" method="post">
+			<div id="name" class="form-row">
+				<input type="text" name="fname" id="fname" placeholder="John" required>
+				<input type="text" name="sname" id="sname" placeholder="Smith" required>
+			</div>
+			<div class="form-row"><input type="email" name="_replyto" id="email" placeholder="JohnSmith@cfedundrum.com" required></div>
+			<div class="form-row"><input type="text" name="course" id="course" placeholder="Computer Science"></div>
+			<div class="form-row">
+				<select name="type" id="typeOfQuery">
+					<option value="Error">Error</option>
+					<option value="Suggestion">Suggestion</option>
+				</select>
+			</div>
+			<div class="form-row"><textarea name="message" id="message" placeholder="Description of error or suggestion"></textarea></div>
+			<div class="form-row">
+				<input type="submit" id="submitButton" value="Send">
+			</div>
+		</form>
+	</div>
+	<div id="footer"></div> <!-- the code for the footer is held on a separate .html file in the 'common' folder -->
+<script>$("#footer").load("/attacks/common/footer.html");</script>
+<script>$('#navbar').load('/attacks/common/navbar.html');</script>
+<script src="/JavaScript/navbar.js" crossorigin="anonymous"></script>
+</body>
+</html>
+</html>
