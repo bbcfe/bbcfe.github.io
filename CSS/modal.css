@@ -7,8 +7,8 @@
 	width: 100%;
 	height:100%;
 	overflow: auto;
-	z-index: 999;
-	background-color: rgba(0, 0, 0, 0.9);
+	/* z-index: 999; */
+	/* background-color: rgba(0, 0, 0, 0.9); */
 }
 
 a {
@@ -18,6 +18,9 @@ a {
 
 
 .modal-content {
+
+	display: none;
+
 	font-family: "Roboto",sans-serif;
 	border-radius: 8px;
 	background-color: rgba(var(--navy-theme),1);
@@ -32,7 +35,8 @@ a {
 .modal-header {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	/* display: flex; */
+	display:none;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
